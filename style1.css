@@ -120,3 +120,43 @@ margin-top: 16px;
 
     
 }
+.flex-container{
+    display: flex;
+ margin-top: 80PX;
+justify-content: space-around;
+align-items: stretch;
+color: aliceblue;
+text-shadow: 0 0 8px white;
+overflow-x: scroll;
+}
+.box1{
+display: block;
+align-items: stretch;
+background-color: rgb(241, 185, 241);
+width: 200px;
+height: 185px;
+font-size: 20px;
+}
+.box2{
+display: block;
+align-items: stretch;
+background-color: blue;
+width: 200px;
+height: 185px;
+font-size: 20px;
+
+}
+.box3{
+    display: block;
+    align-items: stretch;
+    background-color: aqua;
+    width: 200px;
+height: 185px;
+font-size: 20px;
+}
+@media(max-width: 1024px){
+    #foto{
+        width: 20px;
+        height: 90px;
+    }
+}
