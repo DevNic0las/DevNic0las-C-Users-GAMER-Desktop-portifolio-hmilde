@@ -15,7 +15,7 @@
 
 }
 #bar-item{
-padding-right: 80%;
+padding-right: 90%;
 
 }
 .bar{
@@ -156,7 +156,22 @@ font-size: 20px;
 }
 @media(max-width: 1024px){
     #foto{
-        width: 20px;
-        height: 90px;
+        width: 150px;
+        height: 100px;
+    }
+}
+@media screen {
+    #bar-item{
+     padding-right: 150px;
+    }
+}
+@media  screen and (max-width:800px) {
+    .bar{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 400px) {
+    .bar{
+        width: 100%;
     }
 }
