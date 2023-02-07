@@ -1,6 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 *{
     margin: 0 auto;
     padding: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
     
 #sobre1{
@@ -8,26 +13,42 @@
     
 }
 
-.bar ul li{
-  display: inline-block;
-  padding-right: 8px;
+.bar li{
+  display: inline;
+ float: left
 
 
 }
-#bar-item{
-padding-right: 90%;
+.bar a{
+    display: block;
+    padding: 8px;
+color: white;
+padding: 14px 16px;
+text-decoration: none;
 
 }
-.bar{
-    background: rgb(107, 106, 106);
-    padding: 25px;
-    color: aliceblue;
+
+
+ul{
+    list-style: none;
+    margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+ box-shadow: 1px 1px 1px 1px black;
+ position: sticky;
 }
+
+.bar a:hover{
+    background-color: rgba(123, 123, 255, 0.432);
+}
+
 .imagem{
 text-align: center;
 padding-bottom: 50px;
 padding-top: 120px;
-background-color: rgb(240, 226, 226);
+
+background: linear-gradient(93deg, rgb(116, 109, 233) 0%, rgb(124, 118, 240) 96%, rgba(158,232,164,1) 100%, rgba(2,0,36,1) 100%, rgba(79,236,143,1) 100%);
 }
 body{
     display: flexbox;
@@ -128,34 +149,52 @@ align-items: stretch;
 color: aliceblue;
 text-shadow: 0 0 8px white;
 overflow-x: scroll;
-background-color: aqua;
+color: black;
+
 }
 .box1{
 display: block;
 align-items: stretch;
-background-color: rgb(241, 185, 241);
-width: 200px;
-height: 185px;
-font-size: 20px;
-}
-.box2{
-display: block;
-align-items: stretch;
-background-color: blue;
 width: 200px;
 height: 185px;
 font-size: 20px;
 
+
+}
+.box1:hover{
+background-color: blueviolet;
+transition: 1s linear;
+padding: 30px;
+border-radius: 25%;
+}
+.box2{
+display: block;
+align-items: stretch;
+width: 200px;
+height: 185px;
+font-size: 20px;
+}
+.box2:hover{
+    background-color: #0890ff;
+    transition: 1s linear;
+    padding: 30px;
+    border-radius: 25%;
 }
 .box3{
     display: block;
     align-items: stretch;
-    background-color: rgb(6, 19, 19);
+
     width: 200px;
 height: 185px;
 font-size: 20px;
 }
-@media(max-width: 1024px){
+.box3:hover{
+    background-color: #5ab559;
+    transition: 1s linear;
+    padding: 30px;
+    border-radius: 25%;
+}
+@media(max-width: 480px){
     #foto{
         width: 150px;
         height: 100px;
@@ -175,4 +214,16 @@ font-size: 20px;
 #bar-item{
     padding-right: 80%;
 }
+}
+.flex-container_footer{
+display: flex;
+justify-content: space-around;
+}
+.footer-box{
+font-size: 20px;
+font-family: arial;
+ padding-right: 60%;
+}
+.footer-box_creditis{
+float: right;
 }
